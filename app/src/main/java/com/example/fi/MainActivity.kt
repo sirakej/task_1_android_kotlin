@@ -96,14 +96,6 @@ fun bodyContent(){
                             .width(10.dp)
                             .height(10.dp),painter = painterResource(id = R.drawable.profile), contentDescription = "profile")
                     }
-                    Text(
-                        modifier = Modifier
-                            .align(Alignment.TopCenter),
-                        text = "Profile",
-                        color = Color.White,
-                        fontSize = 30.sp,
-                        fontWeight = FontWeight(300)
-                    )
                 }
                 Text(
                     text = "@Sirakej",
@@ -116,7 +108,6 @@ fun bodyContent(){
                     onClick = {
                         showWebView = !showWebView
                     },
-                    //  contentPadding = ButtonDefaults.ButtonWithIconContentPadding
                 ) {
                     Image(
                         modifier = Modifier
@@ -140,7 +131,7 @@ fun bodyContent(){
 @Composable
 fun loadWebUrl() {
     // Declare a string that contains a url
-    val mUrl = "https://www.geeksforgeeks.org"
+    val mUrl = "https://github.com/sirakej/task_1_android_kotlin"
 
     // Adding a WebView inside AndroidView
     // with layout as full screen
